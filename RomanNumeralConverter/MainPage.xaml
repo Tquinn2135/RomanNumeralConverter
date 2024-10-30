@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RomanNumeralConverter.MainPage"
+             Title="Roman Numeral Converter">
+    
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            
+            <Label Text="Enter a number(INT)" FontSize="Medium"/>
+            <Border Stroke="gray" StrokeThickness="1">
+                <Entry x:Name="TxtEntry" />
+            </Border>
+            
+            <Label Text= "Roman Numeral:" FontSize="Medium" />
+            <Border Stroke="gray" StrokeThickness="1">
+                <Label x:Name="lblRoman" FontSize="Medium" Margin="0,15,0,10" Padding="10,10"/>
+            </Border>
+            
+            
+            <Button x:Name="btnConvert" Text="Convert" FontSize="Medium" 
+                    Margin="0,10" Clicked="Convert_OnClicked"/>
+            <Button x:Name="btnClear" Text="Clear" FontSize="Medium"
+                    Clicked="Clear_OnClicked"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
